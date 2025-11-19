@@ -1,9 +1,5 @@
 # IMAGEN BASE
-FROM python:3.15-rc-alpine
-
-# Actualizar pip para corregir vulnerabilidad CVE
-RUN pip install --upgrade pip>=25.3
-
+FROM edisonpaul4/super-imagen-base:1
 # INSTRUCCIONES
 WORKDIR /app
 
