@@ -9,3 +9,8 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
+      - name: Mostrar información
+        run: |
+          echo "Building Docker image..."
+          docker build -t edisonpaul4/hola-mundo:6 .
+          
