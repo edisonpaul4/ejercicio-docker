@@ -18,9 +18,9 @@ jobs:
       - name: Construye Imagen
         run: |
           echo "Building Docker image..."
-          docker build -t edisonpaul4/hola-mundo:7 .
+          docker build -t edisonpaul4/hola-mundo:${{ github.run_number }} .
       - name: Pushea Imagen
         run: |
           echo "Building Docker image..."
-          docker push edisonpaul4/hola-mundo:7
+          docker push edisonpaul4/hola-mundo:${{ github.run_number }}
           
